@@ -40,7 +40,7 @@ class ArunaServiceProvider extends ServiceProvider
                     'Authorization' => 'Bearer '.$config['token'],
                 ],
             ]);
-            $adapter = new ArunaAdapter($s3Client, $bucket, $httpClient, $collectionId, $config['prefix'] ?? null);
+            $adapter = new ArunaAdapter($s3Client, $bucket, $httpClient, $collectionId, $config['prefix'] ?? '');
 
             return new FilesystemAdapter(new Filesystem($adapter), $adapter, $config);
         });
