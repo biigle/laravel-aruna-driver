@@ -1,0 +1,29 @@
+{
+    "name": "biigle/laravel-aruna-driver",
+    "description": "Aruna object Storage storage driver for Laravel/Lumen.",
+    "type": "library",
+    "require": {
+        "biigle/flysystem-aruna": "^1.0",
+        "illuminate/support": "^9.0",
+        "illuminate/filesystem": "^9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Zurowietz",
+            "email": "martin@cebitec.uni-bielefeld.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Biigle\\Filesystem\\Aruna\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Biigle\\Filesystem\\Aruna\\ArunaServiceProvider"
+            ]
+        }
+    }
+}
