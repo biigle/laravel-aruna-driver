@@ -1,5 +1,7 @@
 # Laravel Aruna Object Storage Driver
 
+⚠️ This package is now archived because AOS storage disks can be used via the S3 protocol.
+
 [Aruna Object Storage](https://aruna-storage.org) storage driver for Laravel/Lumen.
 
 ## Installation
